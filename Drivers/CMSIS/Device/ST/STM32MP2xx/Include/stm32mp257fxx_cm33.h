@@ -14151,7 +14151,7 @@ typedef struct
 #define DCMIPP_PRCR_ENABLE                  DCMIPP_PRCR_ENABLE_Msk                          /*!< Parallel interface enable */
 #define DCMIPP_PRCR_FORMAT_Pos              (16U)
 #define DCMIPP_PRCR_FORMAT_Msk              (0xFFUL << DCMIPP_PRCR_FORMAT_Pos)               /*!< 0x00FF0000 */
-#define DCMIPP_PRCR_FORMAT                  DCMIPP_PRCR_FORMAT_Msk                          /*!< Other values: data are captured and output as-is only through the data/dump pipeline (for�example */
+#define DCMIPP_PRCR_FORMAT                  DCMIPP_PRCR_FORMAT_Msk                          /*!< Other values: data are captured and output as-is only through the data/dump pipeline (for example */
 #define DCMIPP_PRCR_SWAPCYCLES_Pos          (25U)
 #define DCMIPP_PRCR_SWAPCYCLES_Msk          (0x1UL << DCMIPP_PRCR_SWAPCYCLES_Pos)            /*!< 0x02000000 */
 #define DCMIPP_PRCR_SWAPCYCLES              DCMIPP_PRCR_SWAPCYCLES_Msk                      /*!< Swap data (cycle 0 vs */
@@ -15467,21 +15467,21 @@ typedef struct
 #define DCMIPP_P1CCTCR1_ENABLE              DCMIPP_P1CCTCR1_ENABLE_Msk                      /*!< Current ENABLE bit value */
 #define DCMIPP_P1CCTCR1_LUM0_Pos            (9U)
 #define DCMIPP_P1CCTCR1_LUM0_Msk            (0x3FUL << DCMIPP_P1CCTCR1_LUM0_Pos)             /*!< 0x00007E00 */
-#define DCMIPP_P1CCTCR1_LUM0                DCMIPP_P1CCTCR1_LUM0_Msk                        /*!< Current luminance increase for input luminance of 0 (increase is idle with LUMx�=�16) */
+#define DCMIPP_P1CCTCR1_LUM0                DCMIPP_P1CCTCR1_LUM0_Msk                        /*!< Current luminance increase for input luminance of 0 (increase is idle with LUMx = 16) */
 
 /***************  Bit definition for DCMIPP_P1CCTCR2 register  ****************/
 #define DCMIPP_P1CCTCR2_LUM4_Pos            (1U)
 #define DCMIPP_P1CCTCR2_LUM4_Msk            (0x3FUL << DCMIPP_P1CCTCR2_LUM4_Pos)             /*!< 0x0000007E */
-#define DCMIPP_P1CCTCR2_LUM4                DCMIPP_P1CCTCR2_LUM4_Msk                        /*!< Current luminance increase for input luminance of 128 (increase is idle with LUMx�=�16) */
+#define DCMIPP_P1CCTCR2_LUM4                DCMIPP_P1CCTCR2_LUM4_Msk                        /*!< Current luminance increase for input luminance of 128 (increase is idle with LUMx = 16) */
 #define DCMIPP_P1CCTCR2_LUM3_Pos            (9U)
 #define DCMIPP_P1CCTCR2_LUM3_Msk            (0x3FUL << DCMIPP_P1CCTCR2_LUM3_Pos)             /*!< 0x00007E00 */
-#define DCMIPP_P1CCTCR2_LUM3                DCMIPP_P1CCTCR2_LUM3_Msk                        /*!< Current luminance increase for input luminance of 96 (increase is idle with LUMx�=�16) */
+#define DCMIPP_P1CCTCR2_LUM3                DCMIPP_P1CCTCR2_LUM3_Msk                        /*!< Current luminance increase for input luminance of 96 (increase is idle with LUMx = 16) */
 #define DCMIPP_P1CCTCR2_LUM2_Pos            (17U)
 #define DCMIPP_P1CCTCR2_LUM2_Msk            (0x3FUL << DCMIPP_P1CCTCR2_LUM2_Pos)             /*!< 0x007E0000 */
-#define DCMIPP_P1CCTCR2_LUM2                DCMIPP_P1CCTCR2_LUM2_Msk                        /*!< Current luminance increase for input luminance of 64 (increase is idle with LUMx�=�16) */
+#define DCMIPP_P1CCTCR2_LUM2                DCMIPP_P1CCTCR2_LUM2_Msk                        /*!< Current luminance increase for input luminance of 64 (increase is idle with LUMx = 16) */
 #define DCMIPP_P1CCTCR2_LUM1_Pos            (25U)
 #define DCMIPP_P1CCTCR2_LUM1_Msk            (0x3FUL << DCMIPP_P1CCTCR2_LUM1_Pos)             /*!< 0x7E000000 */
-#define DCMIPP_P1CCTCR2_LUM1                DCMIPP_P1CCTCR2_LUM1_Msk                        /*!< Current luminance increase for input luminance of 32 (increase is idle with LUMx�=�16) */
+#define DCMIPP_P1CCTCR2_LUM1                DCMIPP_P1CCTCR2_LUM1_Msk                        /*!< Current luminance increase for input luminance of 32 (increase is idle with LUMx = 16) */
 
 /***************  Bit definition for DCMIPP_P1CCTCR3 register  ****************/
 #define DCMIPP_P1CCTCR3_LUM8_Pos            (1U)
@@ -56992,7 +56992,7 @@ typedef struct
 #define USART_ISR_TC                   USART_ISR_TC_Msk            /*!< Transmission complete */
 #define USART_ISR_TXFNF_Pos            (7U)
 #define USART_ISR_TXFNF_Msk            (0x1UL << USART_ISR_TXFNF_Pos) /*!< 0x00000080 */
-#define USART_ISR_TXFNF                USART_ISR_TXFNF_Pos         /*!< TXFIFO not full */
+#define USART_ISR_TXFNF                USART_ISR_TXFNF_Msk         /*!< TXFIFO not full */
 #define USART_ISR_TXE_TXFNF_Pos        USART_ISR_TXE_Pos
 #define USART_ISR_TXE_TXFNF_Msk        USART_ISR_TXFNF_Msk                         /*!< 0x00000080 */
 #define USART_ISR_TXE_TXFNF            USART_ISR_TXFNF_Msk                         /*!< Transmit Data Register Empty or TX FIFO Not Full Flag */
